@@ -8,10 +8,21 @@
 /* Styles globaux */
 body {
     font-family: 'Exo 2', sans-serif;
-    line-height: 1.6;
     color: #333;
-    background: #f4f4f4;
+    background: #BAC9CC; /* Couleur de fond ajustée */
 }
+
+header {
+    background: #B34F2A; /* Couleur de fond de l'en-tête ajustée */
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
 
 header {
     background: #333;
@@ -41,7 +52,15 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #B34F2A;
+    color: #fff; /* Couleur de hover ajustée pour contraster avec le fond de l'en-tête */
+    background-color: #963d26; /* Couleur de hover de fond ajustée */
+    padding: 5px 10px; /* Ajout d'un padding pour un effet de bouton */
+    border-radius: 3px; /* Arrondir les coins pour l'esthétique */
+}
+
+/* Styles pour les polices Google importées */
+h1, h2, h3, .whatsapp-contact {
+    font-family: 'Amiri', serif; /* Utilisation de la police Amiri pour les titres et les boutons WhatsApp */
 }
 
 /* Section d'accueil */
@@ -178,10 +197,9 @@ blockquote p {
 
 /* Footer */
 footer {
-    background: #333;
+    background: #333; /* Fond plus foncé pour le contraste */
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    padding: 1rem 0;
 }
 
 @media only screen and (max-width: 768px) {
