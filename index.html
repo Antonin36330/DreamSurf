@@ -1,13 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imsouane Dream Surf</title>
-    <link rel="stylesheet" href="style.css"> <!-- Assure-toi que le nom du fichier est le bon et qu'il correspond à celui sur ton dépôt GitHub -->
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <nav>
@@ -21,16 +21,16 @@
         </nav>
     </header>
 
-    <section id="accueil" style="background-image:url('path-to-imsouane-beach-image.jpg');">
+    <section id="accueil" class="hero-image">
         <h1>Imsouane Dream Surf</h1>
         <p>Plongez dans l'aventure marocaine et vivez la passion du surf.</p>
-        <a href="https://wa.me/212613367520" class="whatsapp-contact">Contactez-nous sur WhatsApp</a>
+        <a href="https://wa.me/212613367520" class="btn whatsapp-contact">Contactez-nous sur WhatsApp</a>
     </section>
 
     <section id="a-propos">
         <h2>À propos</h2>
         <p>Découvrez notre histoire, ancrée dans la richesse de la culture marocaine et notre amour pour le surf.</p>
-        <img src="path-to-culture-image.jpg" alt="Culture Marocaine">
+        <img src="imsouane.avif" alt="Culture Marocaine">
     </section>
 
     <section id="services">
@@ -62,13 +62,20 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Numéro de téléphone : +212 613-367520</p>
-        <form>
-            <!-- Formulaire simplifié pour l'exemple -->
-            <input type="text" placeholder="Votre nom">
-            <input type="email" placeholder="Votre email">
-            <textarea placeholder="Votre message"></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
+        <form name="contact" netlify>
+            <p>
+              <label>Name <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Email <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Email <input type="text" name="message" /></label>
+              </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
         <div id="google-map">
             <!-- Intégration d'une carte Google Maps pour Tamraght -->
             <iframe
