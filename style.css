@@ -9,12 +9,11 @@
 body {
     font-family: 'Exo 2', sans-serif;
     color: #333;
-    background: #f4f4f4; /* Fond éclairci pour plus de contraste */
+    background: #BAC9CC; /* Couleur de fond ajustée */
 }
 
-/* Header - Styles consolidés */
 header {
-    background: #B34F2A; /* Couleur de fond de l'en-tête ajustée à terre cuite */
+    background: #B34F2A; /* Couleur de fond de l'en-tête ajustée */
     color: #fff;
     padding: 1rem 0;
     position: fixed;
@@ -23,7 +22,18 @@ header {
     z-index: 1000;
 }
 
-/* Navigation */
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -38,25 +48,25 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #BAC9CC; /* Changement de la couleur de survol pour plus de douceur */
-    background-color: #963d26; /* Fond de survol ajusté */
-    padding: 5px 10px;
-    border-radius: 3px;
+    color: #fff; /* Couleur de hover ajustée pour contraster avec le fond de l'en-tête */
+    background-color: #963d26; /* Couleur de hover de fond ajustée */
+    padding: 5px 10px; /* Ajout d'un padding pour un effet de bouton */
+    border-radius: 3px; /* Arrondir les coins pour l'esthétique */
 }
 
 /* Styles pour les polices Google importées */
-h1, h2, h3 {
-    font-family: 'Amiri', serif; /* Utilisation de la police Amiri pour les titres */
+h1, h2, h3, .whatsapp-contact {
+    font-family: 'Amiri', serif; /* Utilisation de la police Amiri pour les titres et les boutons WhatsApp */
 }
 
 /* Section d'accueil */
 #accueil {
     background-size: cover;
-    padding: 100px 0;
+    padding: 100px 0; /* Ajuste selon la hauteur souhaitée */
     text-align: center;
     color: #fff;
 }
@@ -71,36 +81,127 @@ h1, h2, h3 {
     margin-bottom: 1.5rem;
 }
 
-/* Bouton d'appel à l'action WhatsApp */
 .whatsapp-contact {
     display: inline-block;
-    background: #25d366; /* Couleur de WhatsApp */
+    background: #25d366;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .whatsapp-contact:hover {
-    background: #128c7e; /* Assombrissement du bouton au survol */
+    background: #128c7e;
 }
 
-/* Autres sections et éléments */
-/* ... */
+/* Section À propos */
+#a-propos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#a-propos img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Section Services */
+#services {
+    background: #fff;
+    padding: 50px 20px;
+}
+
+.service-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Galerie */
+#galerie {
+    padding: 50px 20px;
+}
+
+#galerie img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Section Témoignages */
+#temoignages {
+    background: #e9ecef;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+blockquote {
+    background: #fff;
+    border-left: 10px solid #B34F2A;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+}
+
+blockquote p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Section Contact */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    background: #B34F2A;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#contact button:hover {
+    background: #963d26;
+}
+
+/* Intégration Google Maps */
+#google-map iframe {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
 
 /* Footer */
 footer {
     background: #333; /* Fond plus foncé pour le contraste */
     color: #fff;
     padding: 1rem 0;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
 
-/* Média queries pour la responsivité */
 @media only screen and (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -109,6 +210,4 @@ footer {
     header nav ul li {
         margin: 10px 0;
     }
-
-    /* Ajoute ici d'autres styles responsifs si nécessaire */
 }
