@@ -5,19 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imsouane Dream Surf</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#galerie">Galerie</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Bienvenue à Imsouane Dream Surf</h1>
+    <section id="accueil" style="background-image:url('path-to-imsouane-beach-image.jpg');">
+        <h1>Imsouane Dream Surf</h1>
+        <p>Plongez dans l'aventure marocaine et vivez la passion du surf.</p>
+        <a href="https://wa.me/212613367520" class="whatsapp-contact">Contactez-nous sur WhatsApp</a>
+    </section>
+
+    <section id="a-propos">
+        <h2>À propos</h2>
+        <p>Découvrez notre histoire, ancrée dans la richesse de la culture marocaine et notre amour pour le surf.</p>
+        <img src="path-to-culture-image.jpg" alt="Culture Marocaine">
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="service-item">
+            <img src="path-to-surf-lesson-image.jpg" alt="Cours de surf">
+            <h3>Cours de surf</h3>
+            <p>Apprenez à surfer avec des instructeurs expérimentés.</p>
+        </div>
+    </section>
+
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <img src="path-to-gallery-image-1.jpg" alt="Vue de Imsouane">
+        <img src="path-to-gallery-image-2.jpg" alt="Banana Beach">
+        <img src="path-to-gallery-image-3.jpg" alt="Plage et culture">
+    </section>
+
+    <section id="temoignages">
+        <h2>Témoignages</h2>
+        <blockquote>
+            <p>"Une expérience inoubliable avec des vagues parfaites et une hospitalité hors pair. Imsouane Dream Surf a vraiment rendu mon voyage spécial!" - Jeanne D.</p>
+        </blockquote>
+        <blockquote>
+            <p>"Le cadre était magnifique et l'ambiance vraiment authentique. J'ai adoré les cours de surf et la découverte de la culture locale." - Pierre L.</p>
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Numéro de téléphone : +212 613-367520</p>
+        <form>
+            <!-- Formulaire simplifié pour l'exemple -->
+            <input type="text" placeholder="Votre nom">
+            <input type="email" placeholder="Votre email">
+            <textarea placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div id="google-map">
+            <!-- Intégration d'une carte Google Maps pour Tamraght -->
+            <iframe
+                width="600"
+                height="450"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Tamraght,Morocco">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Imsouane Dream Surf. Tous droits réservés.</p>
