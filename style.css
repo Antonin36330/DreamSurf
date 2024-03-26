@@ -1,0 +1,196 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles globaux */
+body {
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #B34F2A;
+}
+
+/* Section d'accueil */
+#accueil {
+    background-size: cover;
+    padding: 100px 0; /* Ajuste selon la hauteur souhaitée */
+    text-align: center;
+    color: #fff;
+}
+
+#accueil h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#accueil p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.whatsapp-contact {
+    display: inline-block;
+    background: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-contact:hover {
+    background: #128c7e;
+}
+
+/* Section À propos */
+#a-propos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#a-propos img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Section Services */
+#services {
+    background: #fff;
+    padding: 50px 20px;
+}
+
+.service-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Galerie */
+#galerie {
+    padding: 50px 20px;
+}
+
+#galerie img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Section Témoignages */
+#temoignages {
+    background: #e9ecef;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+blockquote {
+    background: #fff;
+    border-left: 10px solid #B34F2A;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+}
+
+blockquote p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Section Contact */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    background: #B34F2A;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#contact button:hover {
+    background: #963d26;
+}
+
+/* Intégration Google Maps */
+#google-map iframe {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
