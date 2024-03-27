@@ -7,26 +7,15 @@
 
 /* Styles globaux */
 body {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Tajawal', sans-serif; /* Police unifiée pour le corps */
     color: #333;
-    background: #BAC9CC; /* Couleur de fond ajustée */
+    background: #BAC9CC;
 }
 
+/* Header */
 header {
-    background: #B34F2A; /* Couleur de fond de l'en-tête ajustée */
-    color: #fff;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-
-
-header {
-    background: #333;
-    color: #fff;
+    background: #005f73; /* Fond unifié pour le header */
+    color: white;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -38,176 +27,188 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 header nav ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #fff; /* Couleur de hover ajustée pour contraster avec le fond de l'en-tête */
-    background-color: #963d26; /* Couleur de hover de fond ajustée */
-    padding: 5px 10px; /* Ajout d'un padding pour un effet de bouton */
-    border-radius: 3px; /* Arrondir les coins pour l'esthétique */
+header nav ul li a:hover, header nav ul li a:focus {
+    color: #ffdd00;
 }
 
-/* Styles pour les polices Google importées */
-h1, h2, h3, .whatsapp-contact {
-    font-family: 'Amiri', serif; /* Utilisation de la police Amiri pour les titres et les boutons WhatsApp */
+/* Sections de contenu */
+.section {
+    padding: 60px 20px;
 }
 
-/* Section d'accueil */
 #accueil {
     background-size: cover;
-    padding: 100px 0; /* Ajuste selon la hauteur souhaitée */
+    padding: 160px 20px;
     text-align: center;
-    color: #fff;
+    color: white;
 }
 
-#accueil h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+/* Polices Google importées */
+h1, #a-propos h2, #services h2, #h2, #temoignages h2, #lieu h2, #contact h2 {
+    font-family: 'Amiri', serif; /* Utilisation de la police Amiri pour les titres */
 }
 
-#accueil p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
+/* Bouton WhatsApp */
 .whatsapp-contact {
-    display: inline-block;
     background: #25d366;
-    color: #fff;
-    padding: 10px 20px;
+    color: white;
+    padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-.whatsapp-contact:hover {
-    background: #128c7e;
-}
-
-/* Section À propos */
-#a-propos {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#a-propos img {
-    max-width: 100%;
-    height: auto;
+    display: inline-block;
     margin-top: 20px;
 }
 
-/* Section Services */
-#services {
-    background: #fff;
-    padding: 50px 20px;
+/* Diaporama */
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
 }
 
-.service-item {
-    text-align: center;
-    margin-bottom: 30px;
+.mySlides {
+    display: none;
+    width: 100%;
 }
 
-.service-item img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Section Galerie */
-#galerie {
-    padding: 50px 20px;
-}
-
-#galerie img {
+.mySlides img {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    vertical-align: middle;
 }
 
-/* Section Témoignages */
-#temoignages {
-    background: #e9ecef;
-    padding: 50px 20px;
-    text-align: center;
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-blockquote {
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+/* Témoignages */
+#temoignages blockquote {
     background: #fff;
-    border-left: 10px solid #B34F2A;
+    border-left: 10px solid #005f73;
     margin: 20px auto;
     padding: 20px;
-    position: relative;
     width: 80%;
 }
 
-blockquote p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-/* Section Contact */
-#contact {
-    padding: 50px 20px;
-    text-align: center;
-}
-
+/* Contact */
 #contact form {
     max-width: 600px;
     margin: auto;
 }
 
-#contact input,
-#contact textarea {
+#contact input, #contact textarea {
     width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 12px;
+    margin: 10px 0;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 #contact button {
-    background: #B34F2A;
-    color: #fff;
-    border: 0;
+    background: #005f73;
+    color: white;
+    border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor:pointer;
+    cursor: pointer;
+    display: inline-block;
 }
 
 #contact button:hover {
-    background: #963d26;
-}
-
-/* Intégration Google Maps */
-#google-map iframe {
-    width: 100%;
-    border: none;
-    margin-bottom: 20px;
+    background-color: #004a5f;
 }
 
 /* Footer */
 footer {
-    background: #333; /* Fond plus foncé pour le contraste */
-    color: #fff;
-    padding: 1rem 0;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
 }
 
+footer a {
+    color: #ffdd00;
+    text-decoration: none;
+}
+
+/* Réactivité */
 @media only screen and (max-width: 768px) {
     header nav ul {
         flex-direction: column;
     }
 
-    header nav ul li {
-        margin: 10px 0;
+    header nav ul li a {
+        padding: 10px;
     }
-}
+   
+        .slideshow-container {
+            width: 100%;
+        }
+    
+        #temoignages blockquote {
+            width: 90%;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .prev, .next, .text {
+            font-size: 11px;
+        }
+    }
+
+    img {
+        display: block; /* Les images sont inline par défaut */
+        max-width: 80%; /* Réduire la taille maximale à 80% de leur conteneur */
+        height: auto; /* Garder le rapport de l'image intact */
+        margin: 20px auto; /* Marge supérieure et inférieure de 20px et automatique sur les côtés pour centrer */
+    }
+    
+    
